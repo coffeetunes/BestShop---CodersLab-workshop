@@ -1,2 +1,2 @@
-# BestShop---CodersLab-workshop
+# BestShop-CodersLab
 Strona tworzona w ramach warsztatów CodersLab
