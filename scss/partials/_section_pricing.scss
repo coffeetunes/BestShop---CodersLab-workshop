@@ -1,0 +1,198 @@
+
+.pricing {
+  background-color: $color-white;
+  padding: 50px 0;
+  text-align: center;
+  @media (min-width: $desktop-start) {
+    padding: 100px 0;
+  }
+
+
+.container {
+  width:100%;
+  max-width: 1266px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+ul {
+  width: 50%;
+  text-align: left;
+  @media (min-width: 1300px) {
+    width:100%;
+    text-align: center;
+  }
+
+}
+
+li {
+  font-size: 14px;
+  margin-bottom: 20px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+&-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  @media (min-width: 1300px) {
+    flex-direction: row;
+  }
+}
+
+[class*="__item"] {
+  border: 1px solid #FB3B64;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  position: relative;
+  @media (min-width: 1300px) {
+  flex-direction: column;
+    padding: 34px 0 80px 0;
+  }
+}
+
+  &__content {
+    width: 50%;
+    @media (min-width: 1300px) {
+      margin-bottom: 50px;
+      width: 100%;
+    }
+  }
+
+&__title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+&__amount {
+  font-weight: 300;
+  font-size: 46px;
+  color: $color-redish;
+}
+
+&__limited {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 14px;
+}
+
+&__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  color: $color-white;
+  background-color: $color-redish;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 23px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
+}
+
+  .pricing-blocks {
+    .pricing__item- {
+      &left {
+        width:82%;
+        @media (min-width: 450px) {
+          max-width: 370px;
+        }
+        @media (min-width: $desktop-start) {
+          width: 370px;
+        }
+      }
+      &center {
+        width:90%;
+        @media (min-width: 450px) {
+          max-width: 405px;
+        }
+        @media (min-width: $desktop-start) {
+          width: 405px;
+        }
+        border-color: $color-primary;
+        box-shadow: 5px 10px 27px $color-primary-shadow;
+        .pricing__title {
+          font-size: 21px;
+        }
+        .pricing__amount {
+          color: $color-primary;
+        }
+        .pricing__button {
+          width: 160px;
+          background: $color-primary;
+        }
+        .pricing__content {
+
+          width: 50%;
+          @media (min-width: 1300px) {
+            margin-bottom: 60px;
+            width: 100%;
+          }
+        }
+        li {
+          margin-bottom: 25px;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &right {
+        width:82%;
+        @media (min-width: 450px) {
+          max-width: 370px;
+        }
+        @media (min-width: $desktop-start) {
+          width: 370px;
+        }
+        border-color: $color-green;
+        .pricing__amount {
+          color: $color-green;
+        }
+        .pricing__button {
+          background: $color-green;
+        }
+
+      }
+    }
+  }
+}
+
+
+
+.check-yes::before {
+  content: url('../assets/Ckechmark-1.svg');
+  width: 10px;
+  margin-right: 10px;
+}
+
+.check-no::before {
+  content: url('../assets/Close.svg');
+  width: 10px;
+  margin-right: 10px;
+}
+

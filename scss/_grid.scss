@@ -1,0 +1,34 @@
+$columns: 12;
+$base-column-width: 100% / $columns; // 8.(3)%
+
+
+.container { // CSS: .container
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto; // Wyśrodkowanie w poziomie
+
+  .row { // CSS: .container .row
+    display: flex;
+    flex-wrap: wrap; // Zepchnięcie do nowej linii
+    @media (min-width: $desktop-start) {
+      flex-wrap: nowrap;
+    }
+
+    @for $i from 1 through $columns {
+      .col-#{$i} { // CSS: .container .row .col-1/.col-2...col-12
+        width: $base-column-width * $i;
+      }
+    }
+
+    [class*="col-"] { // CSS: .container .row [class*="col-"]
+      min-height: 1px;
+      //  padding: 12px;
+    }
+
+    @media (max-width: $desktop-start) { // Do szerokości 600px, wszystkie kolumny mają 100%
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+  }
+}

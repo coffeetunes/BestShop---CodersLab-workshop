@@ -1,0 +1,80 @@
+/* *** SECTION STATS *** */
+
+
+.stats {
+  background-color: $color-white;
+  padding: 50px 0;
+  text-align: center;
+  @media (min-width: $desktop-start) {
+    padding: 100px 0;
+  }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+   padding: 0 20px;
+  margin-bottom: 40px;
+   @media (min-width: $desktop-start) {
+     font-size: 36px;
+     margin-bottom: 100px;
+   }
+}
+}
+
+.items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  @media (min-width: $desktop-start) {
+    gap: 0;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.item__icon {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.item__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.item .item__img__shift {
+  margin: auto -10px;
+}
+
+
+.item__number {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  letter-spacing: 5.96px;
+}
+
+.item__desc {
+  font-size: 17px;
+  font-family: 'Raleway', sans-serif;
+  color: $color-grey;
+  line-height: 20px;
+  width: 120px;
+}

@@ -1,0 +1,48 @@
+/* *** OGÓLNE *** */
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width:100%;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: $color-primary;
+  color: $color-white;
+  border-radius: 50px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 5px 10px 14px $color-primary-shadow;
+
+}
+.background__redish {
+  background-color: $color-redish;
+}
+
+.background__primary {
+  background-color: $color-primary;
+}
+
+.background__green {
+  background-color: $color-green;
+}
+

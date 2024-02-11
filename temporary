@@ -1,0 +1,105 @@
+/*
+
+ .header {
+  background-color: $color-white;
+  position: fixed;
+  height: 70px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 0 3px 6px #00000029;
+  text-decoration: none;
+  transition: max-height .2s ease-out;
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  label[for="mobile-menu"] {
+    position: absolute;
+    z-index:5;
+    top: 0;
+    padding: 10px;
+    font-size: 16px;
+    @include desktop {
+      display: none;
+    }
+  }
+  input[type="checkbox"] {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+  }
+  input[type="checkbox"] + ul {
+    display: none;
+    @include desktop {
+      display: flex;
+    }
+  }
+  input[type="checkbox"]:checked + ul {
+    display: block;
+    @include desktop {
+      display: flex;
+    }
+  }
+    .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      a {
+        text-decoration: none;
+      }
+    }
+
+    &__logo {
+    font-size: 2em;
+    color: $color-primary;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    }
+
+    &__ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3.28px;
+
+      li {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        }
+
+      a {
+        position:relative;
+        text-decoration: none;
+        color: $color-grey;
+        width: 100%;
+        height: 100%;
+        padding: 28px 12px 27px 12px;
+        transition: 0.5s;
+        border-bottom: 4px solid transparent;
+        margin: 0 35.5px;
+        cursor: pointer;
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+
+          &:hover  {
+            color: $color-black;
+            border-bottom: 4px solid $color-primary;
+          }
+      }
+  }
+}*/
