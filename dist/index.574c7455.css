@@ -948,8 +948,9 @@ body {
   line-height: 22px;
 }
 
-.contact span {
+.contact a, .contact span {
   color: #a5a5a5;
+  text-decoration: none;
 }
 
 .contact .contact__email {

@@ -29,8 +29,9 @@
     line-height: 22px;
     margin-bottom: 40px;
   }
-  span {
+  a, span {
     color: $color-grey;
+    text-decoration: none;
   }
   .contact__email {
     position: relative;
